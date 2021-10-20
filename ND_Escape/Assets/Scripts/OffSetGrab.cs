@@ -1,0 +1,46 @@
+﻿using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class OffSetGrab : XRGrabInteractable
+{
+    private Vector3 interactorPosition = Vector3.zero;
+    private Quaternion interactorRotation = Quaternion.identity;
+
+    protected override void OnSelectEntering(XRBaseInteractor interactor)
+    {
+        base.OnSelectEntering(interactor);
+        StoreInteractor(interactor);
+        MatchAttachPoints(interactor);
+    }
+
+    private void StoreInteractor(XRBaseInteractor interactor)
+    {
+        interactorPosition = interactor.attachTransform.localPosition;
+        interactorRotation = interactor.attachTransform.localRotation;
+    }
+   
+    private void MatchAttachPoints(XRBaseInteractor interactor)
+    {
+        bool hasAttach = attachTransform != null;
+        interactor.attachTransform.position = hasAttach ? attachTransform.position :transform.position;
+        interactor.attachTransform.rotation = hasAttach ? attachTransform.rotation : transform.rotation;
+    }
+      
+    protected override void OnSelectExiting(XRBaseInteractor interactor)
+    {
+        base.OnSelectExiting(interactor);
+        ResetAttachmentPoint(interactor);
+        ClearInteractor(interactor);
+    }
+
+    private void ResetAttachmentPoint(XRBaseInteractor interactor)
+    {
+        interactor.attachTransform.localPosition = interactorPosition;
+        interactor.attachTransform.localRotation = interactorRotation;
+    }
+    private void ClearInteractor(XRBaseInteractor interactor)
+    {
+        interactorPosition = Vector3.zero;
+        interactorRotation = Quaternion.identity;
+    }
+}
