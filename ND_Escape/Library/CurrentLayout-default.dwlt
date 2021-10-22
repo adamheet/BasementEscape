@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 62
+  controlID: 128
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,7 +397,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 60fbffffca3b0000
+      m_ExpandedIDs: 60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -483,9 +483,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.2859156, y: -14.737592, z: -8.769438}
+    m_Target: {x: 1.4387696, y: -14.874799, z: -8.808459}
     speed: 2
-    m_Value: {x: 2.2859156, y: -14.737592, z: -8.769438}
+    m_Value: {x: 1.4387696, y: -14.874799, z: -8.808459}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -533,11 +533,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.082994856, y: 0.85327464, z: -0.49458414, w: 0.14316745}
     speed: 2
-    m_Value: {x: 0.08224976, y: 0.85345596, z: -0.4946893, w: 0.14188199}
+    m_Value: {x: 0.082994856, y: 0.85327464, z: -0.49458417, w: 0.14316745}
   m_Size:
-    m_Target: 10.836547
+    m_Target: 11.738216
     speed: 2
-    m_Value: 10.836547
+    m_Value: 11.738216
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -601,19 +601,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Audio
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Audio
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\aheet\Documents\GitHub\NDEscape\ND_Escape
+  m_LastProjectPath: C:\Users\aheet\Documents\GitHub\BasementEscape\ND_Escape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f63d0000
-    m_LastClickedID: 15862
+    m_SelectedIDs: dc3d0000
+    m_LastClickedID: 15836
     m_ExpandedIDs: 00000000dc3d0000de3d0000e03d0000e23d0000e43d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
